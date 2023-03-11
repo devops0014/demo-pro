@@ -13,6 +13,8 @@ module "vpc" {
   create_database_subnet_group     = true
   enable_nat_gateway               = true
   single_nat_gateway               = true
+  enable_dns_support               = true
+  enable_dns_hostnames             = true
 }
 
 // SG to allow SSH connections from anywhere
